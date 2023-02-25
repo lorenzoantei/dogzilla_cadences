@@ -1,4 +1,5 @@
-str_Name = "CAT"
+str_Name = "DOG"
+# str_Name = "CAT"
 
 #!/usr/bin/env python3
 # coding=utf-8
