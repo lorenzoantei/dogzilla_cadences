@@ -1,0 +1,13 @@
+# cat /etc/systemd/system/yahboom_joystick.service
+[Unit]
+Description=yahboom_joystick start service
+After=multi-user.target
+
+[Service]
+Type=idle
+User=root
+ExecStart=/bin/sh -c "python3 /home/pi/dogzilla_cadences/joystick_dogzilla.py"
+WorkingDirectory=/home/pi
+
+[Install]
+WantedBy=multi-user.target
